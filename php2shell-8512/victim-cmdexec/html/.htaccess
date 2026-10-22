@@ -1,0 +1,2 @@
+# Stock-realistic: write side set per-directory (vhost/.htaccess pattern)
+php_value session.serialize_handler php_serialize
