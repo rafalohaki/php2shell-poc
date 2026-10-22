@@ -1,3 +1,15 @@
+# php2shell-poc
+
+## ⚡ NEW: RCE on fully-patched PHP 8.5.12 → [`php2shell-8512/`](php2shell-8512/)
+
+One-shot + interactive shell against PHP **8.5.12** (the 2026-10-21 security
+release). Pure logic bug (session-gaps family), no memory corruption,
+`uid=33(www-data)` receipt + 33s demo video. Preconditions: serialize_handler
+mismatch (recommended php_serialize write side / legacy php reader) + a
+destructor gadget — details and honest bounds in the subdir README.
+
+---
+
 # PHP session poisoning → RCE
 
 **Session-file poisoning to LFI to RCE** on current PHP (**8.5.11**, tested).
